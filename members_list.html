@@ -1,0 +1,28 @@
+---
+layout: page
+title: Meet the Brothers
+permalink: /members/
+---
+
+   <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+          <h1 class="page-header">Meet the Brothers</h1>
+        </div>
+
+      </div><!-- /.row -->
+       {% assign members = site.data.members | sort: 'last_name', 'first' %} 
+      	{% for member in members %}
+        <div class="col-md-4 portfolio-item">
+          <div style="max-width:700px; max-height:400px;">
+          	  <img class="img-responsive" src="images/members/{{ member.uniqueid }}.jpg" style="max-width:100%; max-height:100%;">
+          </div>
+          <h3>{{ member.first_name }} {{ member.last_name }}</h3>
+          <p>{{ member.pledge_class }} Class</p>
+        </div>
+		{% endfor %}
+      <hr>
+
+    </div><!-- /.container -->
