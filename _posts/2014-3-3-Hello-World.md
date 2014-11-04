@@ -1,6 +1,8 @@
 ---
-layout: post
-title: You're up and running!
+layout: article
+title: This is a stupid post for the sake of it
+author: Kyle Rogers
+category: Professional Development
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).

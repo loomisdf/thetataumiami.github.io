@@ -1,12 +1,94 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description"
+	content="Miami University (Ohio) Colony of Theta Tau Engineering Fraternity">
+<meta name="author" content="Theta Tau Miami">
 
-<article class="page">
-  
-  <h1>{{ page.title }}</h1>
+<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
+<title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-  <div class="entry">
-    {{ content }}
-  </div>
-</article>
+<!-- Bootstrap core CSS -->
+<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+<link href="//yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.css" rel="stylesheet" />
+ 
+<!-- custom CSS -->
+<link href="/style/thetatau-miami.css" rel="stylesheet">
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+
+<!-- JavaScript -->
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="/scripts/modern-business.js"></script>
+<script type="text/javascript" src="//yandex.st/jquery/fancybox/1.3.4/jquery.fancybox.min.js"></script>
+<!-- End JavaScript -->
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" style="background-color: #800000;">
+		<div class="container" >
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse"
+					data-target=".navbar-ex1-collapse">
+					<span class="sr-only">Toggle navigation</span> <span
+						class="icon-bar"></span> <span class="icon-bar"></span> <span
+						class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="/default" style="color:#C9C9C9;"><b>&Theta;&Tau; | Miami
+					University</b></a>
+			</div>
+
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse navbar-ex1-collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" style="color:#DADADA;">About<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="/info/">About the &Theta;&Tau; Miami Colony</a></li>
+							<li><a href="/info/officers">Officers</a></li>
+							<li><a href="/info/actives">Active Members</a></li>
+							<li><a href="/info/pledges">Pledges</a></li>
+							<li><a href="/info/alumni">Alumni</a></li>
+						</ul></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" style="color:#DADADA;">Past Events<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="/articles/service">Service</a></li>
+							<li><a href="/articles/pd">Professional Development</a></li>
+							<li><a href="/articles/brotherhood">Brotherhood</a></li>
+							<li><a href="/articles/">All</a></li>
+						</ul></li>
+					<li><a href="/events" style="color:#DADADA;">Upcoming Events</a></li>
+					<li class="dropdown"><a href="#" class="dropdown-toggle"
+						data-toggle="dropdown" style="color:#DADADA;">Recruit &Theta;&Tau;<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="/info/resumes">Resumes</a></li>
+							<li><a href="/info/careers">Careers</a></li>
+						</ul></li>
+					<li><a href="/contact" style="color:#DADADA;">Contact</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container -->
+	</nav>
+
+	{{ content }}
+	
+    <div class="wrapper-footer">
+      <div class="container">
+        <footer class="footer">
+          {% include svg-icons.html %}
+        </footer>
+      </div>
+    </div>
+    
+</body>
+</html>
