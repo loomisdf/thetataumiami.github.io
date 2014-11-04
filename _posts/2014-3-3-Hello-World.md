@@ -3,9 +3,10 @@ layout: article
 title: This is a stupid post for the sake of it
 author: Kyle Rogers
 category: Professional Development
+image: /images/thetataucrest.png
 ---
 
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below :point_down:).
+Here is a new post that I generated from markdown.
 
 ![_config.yml]({{ site.baseurl }}/images/config.png)
 
