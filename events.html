@@ -1,0 +1,40 @@
+---
+layout: page
+title: Recent Events
+permalink: /events/
+---
+
+   <div class="container">
+
+      <div class="row">
+
+        <div class="col-lg-12">
+          <h1 class="page-header">All Recent Events</h1>
+        </div>
+
+      </div>
+      
+      {% for post in site.posts %}
+      
+      <div class="row">
+
+        <div class="col-md-1">
+          <p><i class="fa fa-camera fa-4x"></i></p>
+          <p>{{ post.date | date: '%B %d, %Y'  }}</p>
+        </div>
+        <div class="col-md-5">
+          <a href="{{ post.url }}"><img src="{{ post.image }}" class="img-responsive"></a>
+        </div>
+        <div class="col-md-6">
+          <h3><a href="{{ post.url }}">{{ post.title }}</a></h3>
+          <p>by {{ post.author }}</p>
+          <a class="btn btn-primary" href="{{ post.url }}">Read More <i class="fa fa-angle-right"></i></a>
+        </div>
+
+      </div>
+      
+      <hr />
+      
+      {% endfor %}
+       
+</div>
