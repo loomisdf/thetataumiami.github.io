@@ -1,0 +1,29 @@
+- position: President
+  uniqueid: gordoneb
+  first_name: Edward
+  last_name: Gordon
+  ordering: 1
+  
+- position: Vice President
+  uniqueid: bergma
+  first_name: Michael
+  last_name: Berg
+  ordering: 2
+
+- position: Treasurer
+  uniqueid: jacobdp
+  first_name: David
+  last_name: Jacob
+  ordering: 3
+  
+- position: Recording Secretary
+  uniqueid: moranjj
+  first_name: Jordan
+  last_name: Moran
+  ordering: 4
+  
+- position: Corresponding Secretary
+  uniqueid: purdieja
+  first_name: Julie
+  last_name: Purdie
+  ordering: 5
